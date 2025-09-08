@@ -109,7 +109,7 @@ export default function Portfolio9({ user, def }) {
       {/* Sidebar (inline, not fixed) */}
       <aside className="hidden lg:flex flex-col w-64 border-r border-white/10 bg-slate-950/70 backdrop-blur">
         <div className="p-4 border-b border-white/10">
-          <a href="#home" className="text-lg font-black tracking-tight text-teal-300 capitalize">
+          <a href="#home" className="text-[14px] sm:text-lg font-black tracking-tight text-teal-300 capitalize">
             {u.name || "Your Name"}
           </a>
           <p className="text-xs text-slate-400 truncate">{u.title || "Your Role"}</p>

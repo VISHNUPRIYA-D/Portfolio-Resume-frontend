@@ -281,7 +281,7 @@ const SaveForm = () => {
 
   return (
     <div className="fixed inset-0 mt-0 flex items-center justify-center bg-black/50 z-50">
-      <div className="bg-white w-96 p-6 rounded-xl shadow-lg">
+      <div className="bg-white w-72 p-4 sm:w-96 sm:p-6 rounded-xl shadow-lg">
         <h2 className="text-xl font-bold mb-4 capitalize">
           {form.mode!=="delete" ?form.item ? "Edit" : "Add" : " Sure! you want to delete "} {form.section}
         </h2>
