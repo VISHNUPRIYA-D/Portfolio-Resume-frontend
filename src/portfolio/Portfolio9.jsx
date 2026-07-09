@@ -169,13 +169,19 @@ export default function Portfolio9({ user, def }) {
               </p>
             </motion.div>
             <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="flex justify-center">
-              {u.image && (
+              
                 <img
-                  src={u.image.startsWith("data:") ? u.image : `data:image/jpeg;base64,${u.image}`}
+                  src={
+    !u?.image
+      ? def.image
+      : u.image.startsWith("/") || u.image.startsWith("data:")
+      ? u.image
+      : `data:image/jpeg;base64,${u.image}`
+  }
                   alt="Profile"
                   className="w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-full object-cover border-4 border-teal-300 shadow-xl"
                 />
-              )}
+              
             </motion.div>
           </div>
         </section>
