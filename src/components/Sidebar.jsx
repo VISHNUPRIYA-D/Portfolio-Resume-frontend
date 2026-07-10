@@ -12,7 +12,7 @@ const Sidebar = () => {
   return (
     <>
       {/* Desktop Sidebar */}
-      <div className="hidden sm:flex w-44 h-screen bg-gradient-to-b from-[#c1bfff] to-[#cf6dfc] fixed flex-col text-black z-50">
+      <div className="hidden md:flex w-44 h-screen bg-gradient-to-b from-[#c1bfff] to-[#cf6dfc] fixed flex-col text-black z-50">
         <Link to="/">
           <Logo className="w-28 h-24 " />
         </Link>
@@ -60,7 +60,7 @@ const Sidebar = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <div className="sm:hidden w-full h-12 bg-gradient-to-b from-[#c1bfff] to-[#cf6dfc] fixed top-0 flex items-center justify-between px-4 z-50">
+      <div className="md:hidden w-full h-12 bg-gradient-to-b from-[#c1bfff] to-[#cf6dfc] fixed top-0 flex items-center justify-between px-4 z-50">
         <Link to="/">
           <Logo className="w-22 h-20" />
         </Link>
@@ -83,7 +83,7 @@ const Sidebar = () => {
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="sm:hidden fixed top-16 right-0 bg-white dark:bg-[#df99ff] dark:text-white shadow-lg rounded-md w-48 p-3 z-50">
+        <div className="md:hidden fixed top-16 right-0 bg-white dark:bg-[#df99ff] dark:text-white shadow-lg rounded-md w-48 p-3 z-50">
           <Link to="/" onClick={menubarClose}>
             <p className="py-2 px-4 hover:bg-gray-200 cursor-pointer">Home</p>
           </Link>
