@@ -4,28 +4,38 @@ const TemplateCard = ({ preview, onSelect, id, token, type }) => {
   return (
     <div
       onClick={() => onSelect(id, type)}
-      className="group relative w-full h-64 rounded-2xl shadow-md 
+      className="group relative w-full h-64 sm:h-60 rounded-2xl shadow-md 
                  overflow-hidden cursor-pointer sm:mb-7 
                  transform transition hover:scale-105 hover:shadow-xl bg-black"
     >
       {/* Preview Area */}
       <div
-        className="w-full h-[400px] sm:h-[600px] md:h-[700px] lg:h-[750px] 
-                   bg-black flex items-center justify-center overflow-hidden relative"
+        className="w-full h-full bg-black overflow-hidden relative"
       >
         {token ? (
           preview ? (
             <>
               {/* Mobile & Tablet → Full stretch */}
-              <div className="w-full h-full flex md:hidden items-center justify-center overflow-hidden">
+              <div className="w-full h-full flex sm:hidden items-center justify-center overflow-hidden">
                 <div className="w-full h-full">{preview}</div>
               </div>
+              <div className="hidden sm:flex lg:hidden absolute inset-0 items-center justify-center overflow-hidden">
+  <div
+    className="pointer-events-none transform-gpu origin-top
+               scale-[0.30] md:scale-[0.35]"
+  >
+    <div className="">
+      {preview}
+    </div>
+  </div>
+</div>
 
+              
               {/* Desktop → Scaled view */}
               <div className="hidden md:flex absolute inset-0 items-center justify-center overflow-hidden">
                 <div
                   className="pointer-events-none transform-gpu origin-center 
-                             scale-[0.6] lg:scale-[0.5] xl:scale-[0.28]"
+                             scale-[0.3] lg:scale-[0.5] xl:scale-[0.28]"
                 >
                   <div className="w-[1024px] h-[768px]">{preview}</div>
                 </div>
