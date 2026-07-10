@@ -34,7 +34,7 @@ const Home = () => {
         </div>
 
         
-        <div className="flex-1 p-3 sm:p-6 ml-0 sm:ml-60">
+        <div className="flex-1 p-3 sm:p-6 ml-0 md:ml-60">
         
 
           
@@ -49,7 +49,7 @@ const Home = () => {
 
           <div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               
             {switchType === "resume" ? (
   filterResumes.length > 0 ? (
@@ -71,7 +71,7 @@ const Home = () => {
             </div>
 
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
              
                { switchType === 'portfolio' ?(
                 filterPortfolios.length>0?(
