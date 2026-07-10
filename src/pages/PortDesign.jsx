@@ -19,7 +19,7 @@ const PortDesign = () => {
   const Component = selectedTemplate.component;
 
   return (
-    <div className="min-h-screen dark:bg-gray-800 bg-gray-100 dark:text-white px-4 sm:px-6 py-6 flex flex-col">
+    <div className="min-h-screen dark:bg-gray-800 bg-[#fcfbd4b8] dark:text-white px-4 sm:px-6 py-6 flex flex-col">
       <div className="flex items-center gap-3 sm:gap-5 mb-6">
         <FaArrowLeft
           onClick={() => navigate("/")}
