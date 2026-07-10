@@ -121,7 +121,7 @@ const Dashboard = () => {
         title="Contacts"
         items={finalUser.contacts}
         renderItem={(contact) => (
-          <div className="space-y-2 mb-3">
+          <div className="space-y-3 mb-3">
             <p>
               <b>Email :</b> {contact.email}{" "}
             </p>
@@ -140,7 +140,7 @@ const Dashboard = () => {
         title="Educations"
         items={finalUser.educations}
         renderItem={(edu) => (
-          <div className="space-y-2">
+          <div className="space-y-3 mb-3">
             <p>
               <b>College name : </b> {edu.collegeName}
             </p>
@@ -165,7 +165,7 @@ const Dashboard = () => {
         title="Experiences"
         items={finalUser.experiences}
         renderItem={(exp) => (
-          <div className="space-y-2">
+          <div className="space-y-3 mb-3">
             <p>
               <b>Company name : </b>
               {exp.companyName}
@@ -192,7 +192,7 @@ const Dashboard = () => {
         title="Projects"
         items={finalUser.projects}
         renderItem={(proj) => (
-          <div className="space-y-2">
+          <div className="space-y-3 mb-3">
             <p>
               <b>Title : </b>
               {proj.title}
@@ -216,7 +216,6 @@ const Dashboard = () => {
       />
 
       {/* Skills Section */}
-      {/* Skills Section */}
       <Section
         title="Skills"
         items={finalUser.skills}
@@ -234,7 +233,7 @@ const Dashboard = () => {
         title="Socialmedia"
         items={finalUser.socialMedia}
         renderItem={(socialObj) => (
-          <div className="spcae-y-2">
+          <div className="spcae-y-3 mb-3">
             <p>
               {socialObj.platform} :{" "}
               <span className="text-blue-500 hover:cursor-pointer">
