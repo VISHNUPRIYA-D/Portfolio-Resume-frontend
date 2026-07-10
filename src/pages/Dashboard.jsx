@@ -70,7 +70,7 @@ const Dashboard = () => {
           <button
             className="px-3 sm:px-4 py-1 w-14 h-6 text-xs sm:text-sm bg-blue-600 text-white rounded hover:bg-blue-700"
             onClick={() =>
-              setForm({ open: true, section: "name".toLowerCase(), item: null })
+              setForm({ open: true, section: "name".toLowerCase(), item: finalUser })
             }
           >
            {formData.name ? "Edit":"Add"}
@@ -87,7 +87,7 @@ const Dashboard = () => {
               setForm({
                 open: true,
                 section: "title".toLowerCase(),
-                item: null,
+                item: finalUser,
               })
             }
           >
@@ -105,7 +105,7 @@ const Dashboard = () => {
               setForm({
                 open: true,
                 section: "about".toLowerCase(),
-                item: null,
+                item: finalUser,
               })
             }
           >
@@ -121,7 +121,7 @@ const Dashboard = () => {
         title="Contacts"
         items={finalUser.contacts}
         renderItem={(contact) => (
-          <div className="space-y-2">
+          <div className="space-y-2 mb-3">
             <p>
               <b>Email :</b> {contact.email}{" "}
             </p>
