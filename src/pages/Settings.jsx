@@ -6,11 +6,11 @@ import { PortfolioContext } from "../context/PortfolioContext";
 import { useNavigate } from "react-router-dom";
 
 const Settings = () => {
-  const { isDarkMode, setIsDarkMode, Logout} = useContext(PortfolioContext);
+  const { isDarkMode, setIsDarkMode, Logout, token, login} = useContext(PortfolioContext);
   const navigate = useNavigate();
 
   return (
-    <div className="h-screen  dark:bg-gray-800 dark:text-white">
+    <div className="h-screen bg-[#fcfbd4b8] dark:bg-gray-800 dark:text-white">
       <div className="flex p-5 gap-4 ">
         
         <button onClick={()=>navigate('/')}>
@@ -45,9 +45,12 @@ const Settings = () => {
     ></div>
   </div>
 </label>
-        <p className="text-md sm:text-xl capitalize p-2 sm:p-5 backdrop-blur-md rounded " onClick={Logout}>
+        {token?
+        (<p className="text-md sm:text-xl capitalize p-2 sm:p-5 backdrop-blur-md rounded " onClick={Logout}>
           logout
-        </p>
+        </p>) : (<p className="text-md sm:text-xl capitalize p-2 sm:p-5 backdrop-blur-md rounded " onClick={Login}>
+          login
+        </p>)
       </div>
     </div>
   );
