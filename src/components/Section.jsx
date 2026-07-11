@@ -9,7 +9,7 @@ const Section = ({ title, items = [], renderItem }) => {
     useContext(PortfolioContext);
 
   return (
-    <div className="bg-white dark:bg-gray-800 dark:text-white shadow rounded-xl p-4 sm:p-6">
+    <div className="bg-white dark:bg-gray-300  shadow rounded-xl p-4 sm:p-6">
       {/* Title + Add button */}
       <div className="flex flex-row justify-between sm:items-center mb-4 gap-2">
         <h2 className="text-base sm:text-xl font-bold">{title}</h2>
