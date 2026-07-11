@@ -50,7 +50,7 @@ const Settings = () => {
           Logout
         </p>) : (<p className="text-md sm:text-xl capitalize p-2 sm:p-5 backdrop-blur-md rounded " onClick={()=>navigate("/login")}>
           Login
-        </p>)
+        </p>)}
       </div>
     </div>
   );
