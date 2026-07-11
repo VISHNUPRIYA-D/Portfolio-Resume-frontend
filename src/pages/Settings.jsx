@@ -45,14 +45,14 @@ const Settings = () => {
     ></div>
   </div>
 </label>
-        <div className="cursor-pointer">
+        
         {token?
-        (<p className="text-md sm:text-xl capitalize p-2 sm:p-5 backdrop-blur-md rounded " onClick={Logout}>
+        (<p className="text-md sm:text-xl capitalize p-2 sm:p-5 backdrop-blur-md rounded cursor-pointer " onClick={Logout}>
           Logout
-        </p>) : (<p className="text-md sm:text-xl capitalize p-2 sm:p-5 backdrop-blur-md rounded " onClick={()=>navigate("/login")}>
+        </p>) : (<p className="text-md sm:text-xl capitalize p-2 sm:p-5 backdrop-blur-md rounded cursor-pointer" onClick={()=>navigate("/login")}>
           Login
         </p>)}
-        </div>
+        
       </div>
     </div>
   );
