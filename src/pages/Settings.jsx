@@ -6,7 +6,7 @@ import { PortfolioContext } from "../context/PortfolioContext";
 import { useNavigate } from "react-router-dom";
 
 const Settings = () => {
-  const { isDarkMode, setIsDarkMode, Logout, token, login} = useContext(PortfolioContext);
+  const { isDarkMode, setIsDarkMode, Logout, token} = useContext(PortfolioContext);
   const navigate = useNavigate();
 
   return (
@@ -47,9 +47,9 @@ const Settings = () => {
 </label>
         {token?
         (<p className="text-md sm:text-xl capitalize p-2 sm:p-5 backdrop-blur-md rounded " onClick={Logout}>
-          logout
-        </p>) : (<p className="text-md sm:text-xl capitalize p-2 sm:p-5 backdrop-blur-md rounded " onClick={Login}>
-          login
+          Logout
+        </p>) : (<p className="text-md sm:text-xl capitalize p-2 sm:p-5 backdrop-blur-md rounded " onClick={()=>navigate("/login")}>
+          Login
         </p>)
       </div>
     </div>
