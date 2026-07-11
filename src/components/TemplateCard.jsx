@@ -35,7 +35,7 @@ const TemplateCard = ({ preview, onSelect, id, token, type }) => {
               <div className="hidden md:flex absolute inset-0 items-center justify-center overflow-hidden">
                 <div
                   className="pointer-events-none transform-gpu origin-center 
-                             scale-[0.3] lg:scale-[0.5] xl:scale-[0.28]"
+                             scale-[0.3] lg:scale-[0.5] xl:scale-[0.29]"
                 >
                   <div className="w-[1024px] h-[768px]">{preview}</div>
                 </div>
@@ -52,6 +52,7 @@ const TemplateCard = ({ preview, onSelect, id, token, type }) => {
       </div>
 
       {/* Overlay on Hover */}
+      {token?(
       <div
         className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 
                    flex items-center justify-center transition"
@@ -62,7 +63,7 @@ const TemplateCard = ({ preview, onSelect, id, token, type }) => {
         >
           Select
         </span>
-      </div>
+      </div>):<></>}
     </div>
   );
 };
