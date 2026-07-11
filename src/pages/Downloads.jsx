@@ -12,7 +12,7 @@ const Downloads = () => {
    <div className="bg-[#fcfbd4b8] min-h-screen w-full dark:bg-gray-800 dark:text-white">      
           <Sidebar />
        {!saveDownload.length && (
-      <p className='text-2xl sm:ml-48'>No Downloads yet</p>
+      <p className='text-2xl sm:ml-48 mt-10 md:mt-20'>No Downloads yet</p>
        )}
         {saveDownload?.length > 0 && saveDownload.some((t) => t.downloaded) && (
             <div className='sm:ml-48 bg-fixed mx-4'>
