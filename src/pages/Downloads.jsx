@@ -12,11 +12,11 @@ const Downloads = () => {
    <div className="bg-[#fcfbd4b8] min-h-screen w-full dark:bg-gray-800 dark:text-white">      
           <Sidebar />
        {!saveDownload.length && (
-      <p className='text-2xl sm:ml-48 mt-25%'>No Downloads yet</p>
+      <p className='text-xl md:text-2xl md:ml-48 mt-[25%]'>No Downloads yet</p>
        )}
         {saveDownload?.length > 0 && saveDownload.some((t) => t.downloaded) && (
-            <div className='sm:ml-48 bg-fixed mx-4'>
-              <h2 className="text-xl sm:text-2xl font-bold  mb-6 pt-16 ">
+            <div className='md:ml-48 bg-fixed mx-4'>
+              <h2 className="text-xl md:text-2xl font-bold  mb-6 pt-16 ">
                 Downloaded Templates
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
