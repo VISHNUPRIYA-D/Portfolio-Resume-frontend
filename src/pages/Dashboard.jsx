@@ -25,9 +25,10 @@ const Dashboard = () => {
   }
 
   return (
+    <div className:"dark:bg-gray-800">
     <div className="p-4 sm:p-8 space-y-8 md:ml-44 ">
       {/* Username / Profile Section */}
-      <h1 className="mt-10  font-semibold text-lg sm:text-2xl">Your Account</h1>
+      <h1 className="mt-10  font-semibold text-lg sm:text-2xl dark:text-white">Your Account</h1>
       <div className="relative w-32 h-32 sm:w-64 sm:h-64 mx-auto opacity-100">
   {finalUser.image ? (
     <img
@@ -53,7 +54,7 @@ const Dashboard = () => {
     <BiEdit className="text-blue-500 text-xl sm:text-2xl" />
   </button>
 </div>
-      <div className="bg-white dark:bg-gray-800 dark:text-white shadow rounded-xl p-3 sm:p-6 space-y-2 text-xs sm:text-sm">
+      <div className="bg-white dark:bg-gray-300  shadow rounded-xl p-3 sm:p-6 space-y-2 text-xs sm:text-sm">
         <h2 className="text-base sm:text-xl font-bold mb-1 sm:mb-2">
           Profile
         </h2>
