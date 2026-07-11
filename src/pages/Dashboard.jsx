@@ -18,8 +18,8 @@ const Dashboard = () => {
 
   if (!userData) {
     return (
-      <div className="p-8 text-center  sm:ml-44">
-        <p className=" mt-12">Loading user data...</p>
+      <div className="p-8 text-center  md:ml-44">
+        <p className=" mt-20">Loading user data...</p>
       </div>
     );
   }
