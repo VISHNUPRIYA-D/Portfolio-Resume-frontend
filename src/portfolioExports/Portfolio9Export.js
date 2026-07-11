@@ -70,7 +70,8 @@ export const Portfolio9Export = (user, def) => {
           <p class="mt-4 text-slate-400 text-sm md:text-base">${u.about || "Short introduction goes here."}</p>
         </div>
         <div>
-          ${u.image ? `<img src="${u.image.startsWith("data:") ? u.image : `data:image/jpeg;base64,${u.image}`}" class="w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-full object-cover border-4 border-teal-300 shadow-xl"/>` : ""}
+        
+          <img src="${u?.image? `data:image/jpeg;base64,${u.image}` : def.image}" class="w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-full object-cover border-4 border-teal-300 shadow-xl"/>
         </div>
       </section>
 
