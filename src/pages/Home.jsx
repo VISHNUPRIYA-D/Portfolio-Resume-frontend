@@ -25,7 +25,7 @@ const Home = () => {
           {!token && (
             <Link
               to="/login"
-              className="hidden sm:block bg-purple-500 text-white px-3 py-1 rounded hover:bg-purple-600 transition"
+              className="hidden md:block bg-purple-500  mr-3 text-white px-3 py-1 rounded hover:bg-purple-600 transition"
             >
               Login
             </Link>
