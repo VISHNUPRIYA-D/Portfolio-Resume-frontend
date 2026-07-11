@@ -244,7 +244,7 @@ const Dashboard = () => {
           </div>
         )}
       />
-
+    </div>
       {form && <SaveForm />}
     </div>
   );
