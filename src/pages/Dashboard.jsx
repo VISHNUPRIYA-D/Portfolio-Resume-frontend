@@ -25,7 +25,7 @@ const Dashboard = () => {
   }
 
   return (
-    <div className:"dark:bg-gray-800">
+    <div className="dark:bg-gray-800">
     <div className="p-4 sm:p-8 space-y-8 md:ml-44 ">
       {/* Username / Profile Section */}
       <h1 className="mt-10  font-semibold text-lg sm:text-2xl dark:text-white">Your Account</h1>
