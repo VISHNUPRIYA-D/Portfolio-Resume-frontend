@@ -13,7 +13,7 @@ const Settings = () => {
     <div className="h-screen bg-[#fcfbd4b8] dark:bg-gray-800 dark:text-white">
       <div className="flex p-5 gap-4 ">
         
-        <button onClick={()=>navigate('/')}>
+        <button onClick={()=>navigate('/')} className="cursor-pointer">
           <FaArrowLeft className="text-xl" />
         </button>
 
@@ -45,12 +45,14 @@ const Settings = () => {
     ></div>
   </div>
 </label>
+        <div className="cursor-pointer">
         {token?
         (<p className="text-md sm:text-xl capitalize p-2 sm:p-5 backdrop-blur-md rounded " onClick={Logout}>
           Logout
         </p>) : (<p className="text-md sm:text-xl capitalize p-2 sm:p-5 backdrop-blur-md rounded " onClick={()=>navigate("/login")}>
           Login
         </p>)}
+        </div>
       </div>
     </div>
   );
