@@ -11,7 +11,7 @@ const Settings = () => {
 
   return (
     <div className="h-screen bg-[#fcfbd4b8] dark:bg-gray-800 dark:text-white">
-      <div className="flex p-5 gap-4 ">
+      <div className="flex p-5 gap-3 ">
         
         <button onClick={()=>navigate('/')} className="cursor-pointer">
           <FaArrowLeft className="text-xl" />
